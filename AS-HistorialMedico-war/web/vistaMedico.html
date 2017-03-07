@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        
+	<link rel='stylesheet' type='text/css' href='font-awesome-4.7.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="Css/style.css" type="text/css">
+        <link rel="stylesheet" href="Css/estilosMedico.css" type="text/css"/>
+
+
+</head>
+<body>
+	<div class="header"><img alt="" src="hist.png"><button>Logout</button></div>
+
+	<div class='barraBuscar' style=''>
+		<input type=text />
+		<i class='fa fa-search'></i>
+	</div>
+        
+	<div class='contenidoMedico'>
+		<div class='datosPersonales'>
+			<table>
+				<tr>
+					<th>
+						<img src='images/persona.jpg'/>
+					</th>
+					<td>
+						<table>
+							<tr>
+								<td>Nombre:</td>
+								<td><input type=text></td>
+							</tr>
+							<tr>
+								<td>Apellidos:</td>
+								<td><input type=text></td>
+							</tr>
+							<tr>
+								<td>Fecha de nacimiento:</td>
+								<td><input type=text>/<input type=text>/<input type=text></td>
+							</tr>
+							<tr>
+								<td>Grupo sanguíneo:</td>
+								<td><input type=text></td>
+							</tr>
+						</table>
+						Alergias:<br>
+						<textarea class='anchoTotal' rows=4></textarea>
+						<input type=submit value="Guardar cambios">
+					</td>
+				</tr>
+			</table>
+		</div>
+                <hr>
+		<div class='historial anchoTotal'>
+			<table class='anchoTotal tablaConsultas'>
+				<tr>
+					<th>Fecha</th>
+					<th>Especialidad</th>
+					<th>Receta</th>
+					<th>Valoración</th>
+					<th></th>
+				</tr>
+				<tr class='consultaPar'>
+					<td>10/02/2013</td>
+					<td>Cardiología�a</td>
+					<td><input type='checkbox' checked disabled/></td>
+					<td>Malisima</td>
+					<td><i class='fa fa-search-plus'></i></td>
+				</tr>
+				<tr class='consultaImpar'>
+					<td>23/02/2013</td>
+					<td>Cardiología�a</td>
+					<td><input type='checkbox' disabled/></td>
+					<td>Malisima</td>
+					<td><i class='fa fa-search-plus'></i></td>
+				</tr>
+				<tr class='consultaImpar'>
+					<td class='consultaAbierta' colspan=5>
+						S�ntomas:<br>
+						<textarea class='anchoTotal' rows=4></textarea><br>
+						Valoraci�n:<br>
+						<textarea class='anchoTotal' rows=4></textarea><br>
+						Diagn�stico:<br>
+						<textarea class='anchoTotal' rows=4></textarea><br>
+						Receta:<br>
+						<textarea class='anchoTotal' rows=4></textarea><br>
+						<input type=submit value="Guardar">
+					</td>
+				</tr>
+				<tr class='consultaPar'>
+					<td>10/02/2013</td>
+					<td>Cardiología�a</td>
+					<td><input type='checkbox' checked disabled/></td>
+					<td>Malisima</td>
+					<td><i class='fa fa-search-plus'></i></td>
+				</tr>
+				<tr class='consultaImpar'>
+					<td>10/02/2013</td>
+					<td>Cardiología</td>
+					<td><input type='checkbox' disabled/></td>
+					<td>Malisima</td>
+					<td><i class='fa fa-search-plus'></i></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
