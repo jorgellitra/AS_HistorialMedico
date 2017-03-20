@@ -16,11 +16,12 @@
     </head>
     <body>
         <div class="contenido-body">
-            <div class="header"><img alt="" src='images/hist.png'><form action="login.jsp" style="text-align: right"><input type="submit" value="LogOut"></form></div>
-        <form action="Buscador.jsp" style="text-align: center">
-        Búsqueda: <input type="text" name="Search" value="Buscador"><input type="submit" value="Buscar">
+            <div class="header"><img alt="" src='images/hist.png'><form action="login.jsp" style="text-align: right"><input type="submit" name="Login" value="LogOut"></form></div>
+        <form action="FrontController" style="text-align: center">
+            Búsqueda: <input type="text" name="Buscador"  placeholder="Ej: Ana Placido"><input type="hidden" name="command" value="Buscador"><input type="submit" value="Buscar">
         </form><br>
         <div style="text-align: center">
+         <%--aqui compruebas $sesionquenoessesion y lo cargas tenga lo que tenga --%>
         <a href="Seleccionado.jsp" >Ana morgade</a>
         <br>
         <a href="Seleccionado.jsp" >Jorge quintana</a>

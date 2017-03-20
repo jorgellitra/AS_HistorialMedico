@@ -13,15 +13,10 @@
         
         <div class="header"><img alt="" src='images/hist.png'></div>
         
-        <h2> CONECTESE A TRAVES DE SU DNI </h2>
+        <button><title>AS-Medico/search</title>
         
-        
-        <form action="Logged.jsp">
-            DNI: <input type="text" name="dni" value="" /><br>
-            Contraseña: <input type="text" name="contraseña" value="" /><br>
-            <input type="submit" value="Log In" />
-        </form>
         </div>
+        
         <div class="footer">
             <ul class="footer-ul">
                 <li>Aviso Legal</li>

@@ -7,6 +7,7 @@ package Controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,6 +30,9 @@ public class FrontController extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+ 
+  
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         FrontCommand command = getCommand(request);
@@ -87,7 +91,8 @@ public class FrontController extends HttpServlet {
 
     private Class getCommandClass(HttpServletRequest request) {
         Class result;
-        final String command = "Controller." + (String) request.getParameter("definitivo");
+
+        final String command = "Controller." + (String) request.getParameter("command");
         try {
             result = Class.forName(command);
         }catch (ClassNotFoundException e){
